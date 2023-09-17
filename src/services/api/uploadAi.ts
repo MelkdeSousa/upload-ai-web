@@ -1,5 +1,6 @@
+import { envs } from "@/config/envs";
 import { createApi } from "./api";
 
-export const uploadAIApiUrl = 'http://127.0.0.1:3333'
+export const uploadAIApiUrl = envs.VITE_UPLOAD_AI_API
 
 export const uploadAIApi = createApi(uploadAIApiUrl)
